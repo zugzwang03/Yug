@@ -46,4 +46,19 @@ export class AppComponent {
   //       }
   //     });
   // }
+//   const toggleBtn = document.querySelector(".menu-toggle");
+// const toggleicon =  document.querySelector(".menu-toggle>i");
+// const navList = document.querySelector(".nav-list");
+
+// toggleBtn.addEventListener("click", function () {
+//     if(toggleicon.classList.contains("fa-bars")){
+//         toggleicon.classList.replace("fa-bars", "fa-rectangle-xmark");
+//         navList.classList.toggle("hide");
+
+//     }else{
+//         toggleicon.classList.replace("fa-rectangle-xmark", "fa-bars");
+//         navList.classList.toggle("hide");
+//     }
+// });
 }
+

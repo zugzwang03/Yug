@@ -1,20 +1,99 @@
-*{
-    padding: auto;
-    margin: auto;
+* {
+    padding: 0px;
+    margin: 0px;
 }
 
-#nav {
-    background-color: rgb(66, 144, 213);
-    padding: 1%;
-    font-family: 'poppins';
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(150, 257, 257);
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
 }
 
-.links {
-    font-size: 82%;
-    float: right;
-    font-family: 'poppins';
-    color: black;
-    padding-right: 2%;
-    padding-top: 1%;
+.navbardiv {
+    width: 100%;
+    background-color: rgb(19, 225, 225);
+}
+
+.navbar {
+    height: 10vh;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-list a:hover {
+    color: rgb(71, 5, 137);
+}
+
+.menu-toggle {
+    font-size: 2em;
     cursor: pointer;
+    display: none;
 }
+
+/*resposive*/
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .navbar .nav-list {
+        background-color: #fff;
+        position: absolute;
+        top: 70px;
+        right: 70px;
+        box-sizing: border-box;
+        border-radius: 15px;
+        flex-flow: column nowrap;
+        gap: 15px;
+        padding: 1.5rem 3rem;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(145, 10, 10, 0.1);
+    }
+
+    .nav-list a {
+        font-size: 1rem;
+        font-weight: 100;
+        color: rgb(85, 85, 85)
+    }
+    .nav-list a:hover {
+        color: black;
+        font-weight: 400;
+    }
+
+
+}
+
+
