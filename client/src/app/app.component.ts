@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { StudentService } from './student.service';
 import { studentRegistration } from './student';
+import { StudentRegistrationComponent } from './student-registration/student-registration.component';
+import { StudentLoginComponent } from './student-login/student-login.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, StudentRegistrationComponent, StudentLoginComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
