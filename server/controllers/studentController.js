@@ -25,11 +25,10 @@ const login = catchAsyncErrors(async (req, res, next) => {
         });
     }
     if (password !== await student.password) {
-        res.json({
+        return res.json({
             success: false,
             message: "Incorrect password"
         });
-        return next(new Error("Incorrect password"));
     }
     res.status(200).json({
         success: true,
@@ -37,7 +36,24 @@ const login = catchAsyncErrors(async (req, res, next) => {
     });
 });
 
+const getStudentInfo = catchAsyncErrors(async (req, res, next) => {
+    const {email} = req.body;
+    const student = await Student.findOne({ email });
+    console.log(student);
+    if (!student) {
+        return res.json({
+            success: false,
+            message: "Student not found"
+        });
+    }
+    res.status(200).json({
+        success: true,
+        student
+    });
+})
+
 module.exports = {
     register,
-    login
+    login,
+    getStudentInfo
 };

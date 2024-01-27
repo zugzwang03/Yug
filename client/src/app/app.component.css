@@ -1,6 +1,20 @@
+*{
+    padding: auto;
+    margin: auto;
+}
+
 #nav {
     background-color: rgb(66, 144, 213);
     padding: 1%;
     font-family: 'poppins';
-    /* font-family: 'Poppins', sans-serif; */
+}
+
+.links {
+    font-size: 82%;
+    float: right;
+    font-family: 'poppins';
+    color: black;
+    padding-right: 2%;
+    padding-top: 1%;
+    cursor: pointer;
 }

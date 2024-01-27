@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { StudentService } from './student.service';
@@ -11,32 +11,39 @@ import { StudentLoginComponent } from './student-login/student-login.component';
   standalone: true,
   imports: [CommonModule, RouterModule, StudentRegistrationComponent, StudentLoginComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'Yug';
   student: studentRegistration = {
-    email: "student1@gmail.com",
-    password: "student1",
-    firstName: "Student",
-    lastName: "One",
+    email: 'student1@gmail.com',
+    password: 'student1',
+    firstName: 'Student',
+    lastName: 'One',
     rollNo: 1,
     grade: 3,
     address: "Student 1's address",
     fathersName: "Student 1's father",
     mothersName: "Student 1's mother",
     phoneNumber: 1234567890,
-    parentPhoneNumber: 9087654321
+    parentPhoneNumber: 9087654321,
   };
+  title = 'Yug';
+  @Input() loginInfo = 'Login';
   constructor(private studentService: StudentService) { }
-  ngOnInit() {
-    this.studentRegister();
+  onActivate() {
+    console.log('update login');
+    this.loginInfo = this.studentService.studentDetail.firstName + " " + this.studentService.studentDetail.lastName;
   }
-  async studentRegister() {
-    await this.studentService.studentRegistration(this.student).subscribe(res => {
-      if (JSON.parse(JSON.stringify(res)).token) {
-        console.log('Student registered');
-      }
-    })
-  }
+  // ngOnInit() {
+    // this.studentRegister();
+  // }
+  // async studentRegister() {
+  //   await this.studentService
+  //     .studentRegistration(this.student)
+  //     .subscribe((res) => {
+  //       if (JSON.parse(JSON.stringify(res)).token) {
+  //         console.log('Student registered');
+  //       }
+  //     });
+  // }
 }
