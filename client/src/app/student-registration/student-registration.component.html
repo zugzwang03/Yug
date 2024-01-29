@@ -2,56 +2,62 @@
     <div class="container">
         <h1>Student Registration</h1>
         <form id="registrationForm">
-
-            <div class="reg-group"><label for="firstName">First Name:</label>
-                <input type="text" id="firstName" required>
+            <div class="reg-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" [(ngModel)]="student.firstName" required />
             </div>
 
-            <div class="reg-group"><label for="middleName">Middle Name:</label>
-                <input type="text" id="middleName" required>
+            <div class="reg-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" [(ngModel)]="student.lastName" required />
             </div>
 
-            <div class="reg-group"><label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" required>
+            <div class="reg-group">
+                <label for="rollNo">Roll No:</label>
+                <input type="number" id="rollNo" name="rollNo" [(ngModel)]="student.rollNo" required />
             </div>
 
-            <div class="reg-group"><label for="rollNo">Roll No:</label>
-                <input type="number" id="rollNo" required>
+            <div class="reg-group">
+                <label for="grade">Grade:</label>
+                <input type="number" id="grade" name="grade" [(ngModel)]="student.grade" required />
             </div>
 
-            <div class="reg-group"><label for="grade">Grade:</label>
-                <input type="number" id="grade" required>
+            <div class="reg-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" [(ngModel)]="student.address" required />
             </div>
 
-            <div class="reg-group"> <label for="address">Address:</label>
-                <input type="text" id="address" required>
+            <div class="reg-group">
+                <label for="fathersName">Father's Name:</label>
+                <input type="text" id="fathersName" name="fathersName" [(ngModel)]="student.fathersName" required />
             </div>
 
-            <div class="reg-group"><label for="fathersName">Father's Name:</label>
-                <input type="text" id="fathersName" required>
+            <div class="reg-group">
+                <label for="mothersName">Mother's Name:</label>
+                <input type="text" id="mothersName" name="mothersName" [(ngModel)]="student.mothersName" required />
             </div>
 
-            <div class="reg-group"><label for="mothersName">Mother's Name:</label>
-                <input type="text" id="mothersName" required>
+            <div class="reg-group">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" [(ngModel)]="student.phoneNumber" required />
             </div>
 
-            <div class="reg-group"><label for="phoneNumber">Phone Number:</label>
-                <input type="tel" id="phoneNumber" required>
+            <div class="reg-group">
+                <label for="parentPhoneNumber">Parent's Phone Number:</label>
+                <input type="tel" id="parentPhoneNumber" name="parentPhoneNumber" [(ngModel)]="student.parentPhoneNumber" required />
             </div>
 
-            <div class="reg-group"><label for="parentPhoneNumber">Parent's Phone Number:</label>
-                <input type="tel" id="parentPhoneNumber" required>
+            <div class="reg-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" [(ngModel)]="student.email" required />
             </div>
 
-            <div class="reg-group"><label for="email">Email:</label>
-                <input type="email" id="email" required>
+            <div class="reg-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" [(ngModel)]="student.password" required />
             </div>
 
-            <div class="reg-group"><label for="password">Password:</label>
-                <input type="password" id="password" required>
-            </div>
-
-            <button type="submit">Register</button>
+            <button type="submit" (click)="studentRegister()">Register</button>
         </form>
     </div>
 </div>

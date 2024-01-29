@@ -1,16 +1,33 @@
 <!-- <h1 id="nav">{{ title }} <a class="links" routerLink="studentLogin"> {{loginInfo}} </a></h1> -->
 
 <div class="navbardiv">
-    <nav class="navbar">
-        <div class="logo">{{ title }}</div>
-        <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
-        <ul class="nav-list hide">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <!-- <li><a href="#">Contact</a></li> -->
-            <li><a routerLink="studentLogin">{{loginInfo}}</a></li>
-        </ul>
-    </nav>
+  <nav class="navbar">
+    <div class="logo">{{ title }}</div>
+    <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+    <ul class="nav-list hide">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <!-- <li><a href="#">Contact</a></li> -->
+      <li>
+        <a routerLink="studentLogin">{{ loginInfo }}</a>
+      </li>
+    </ul>
+  </nav>
 </div>
 
 <router-outlet (activate)="onActivate()"></router-outlet>
+<script>
+  const toggleBtn = document.querySelector(".menu-toggle");
+  const toggleicon = document.querySelector(".menu-toggle>i");
+  const navList = document.querySelector(".nav-list");
+
+  toggleBtn.addEventListener("click", function () {
+    if (toggleicon.classList.contains("fa-bars")) {
+      toggleicon.classList.replace("fa-bars", "fa-rectangle-xmark");
+      navList.classList.toggle("hide");
+    } else {
+      toggleicon.classList.replace("fa-rectangle-xmark", "fa-bars");
+      navList.classList.toggle("hide");
+    }
+  });
+</script>

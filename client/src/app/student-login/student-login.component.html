@@ -1,39 +1,36 @@
-<!-- <div class="login-body">
-    <div class="login-container">
-        <h2>Student Login</h2>
-        <form>
-          <label for="email">Email:</label>
-          <input type="email" id="username" name="email" [(ngModel)]="email" required>
-    
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" [(ngModel)]="password" required>
-    
-          <button type="submit" (click)="login()">Login</button>
-        </form>
-      </div>
-</div>
-
- -->
-
- <div class="logindiv">
+<div class="logindiv">
   <div class="login-container">
-      <h2>Login</h2>
-      <form class="login-form">
-          <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" id="username" name="email" placeholder="Enter your Email" [(ngModel)]="email" required >
-          </div>
-          <div class="form-group">
-              <label for="password">Password:</label>
-              <input type="password" id="password" name="password" placeholder="Enter your password" [(ngModel)]="password" required>
-          </div>
-          <div class="form-group">
-              <button type="submit" (click)="login()">Login</button>
-          </div>
-      </form>
-      <div class="other-option">
-          <a href="#"><p>Don't have a account ?</p></a>
-          <a href="#"><p>Forgot Password ?</p></a>
+    <h2>Login</h2>
+    <form class="login-form">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="username"
+          name="email"
+          placeholder="Enter your Email"
+          [(ngModel)]="email"
+          required
+        />
       </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          [(ngModel)]="password"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <button type="submit" (click)="login()">Login</button>
+      </div>
+    </form>
+    <div class="other-option">
+      <a href="http://localhost:4200/studentRegistration">Don't have an account ?</a>
+      <a href="#"><p>Forgot Password ?</p></a>
+    </div>
   </div>
 </div>
