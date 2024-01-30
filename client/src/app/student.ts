@@ -2,6 +2,7 @@ export interface studentRegistration {
     email: string,
     password: string,
     firstName: string,
+    middleName: string,
     lastName: string,
     rollNo: number,
     grade: number,
