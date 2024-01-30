@@ -17,6 +17,7 @@ export class StudentRegistrationComponent {
     password: "",
     firstName: "",
     lastName: "",
+    middleName: "",
     rollNo: -1,
     grade: -1,
     address: "",

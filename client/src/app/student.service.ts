@@ -12,6 +12,7 @@ export class StudentService {
     email: "",
     password: "",
     firstName: "LogIn",
+    middleName: "",
     lastName: "",
     rollNo: 1,
     grade: 3,
