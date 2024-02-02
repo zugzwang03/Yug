@@ -4,7 +4,7 @@
         <form id="registrationForm">
             <div class="reg-group">
                 <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" [(ngModel)]="student.firstName" required />
+                <input type="text" id="firstName" name="firstName" [(ngModel)]="student.firstName" required/>
             </div>
 
             <div class="reg-group">
@@ -59,7 +59,7 @@
 
             <div class="reg-group">
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" [(ngModel)]="student.password" required />
+                <input type="password" id="password" name="password" [(ngModel)]="student.password" required minlength="8"/>
             </div>
 
             <button type="submit" (click)="studentRegister()">Register</button>
