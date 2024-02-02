@@ -1,5 +1,5 @@
 <!-- <h1 id="nav">{{ title }} <a class="links" routerLink="studentLogin"> {{loginInfo}} </a></h1> -->
- 
+
 <div class="navbardiv">
   <nav class="navbar">
     <div class="logo">{{ title }}</div>
@@ -7,7 +7,10 @@
     <ul class="nav-list hide">
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
-      <!-- <li><a href="#">Contact</a></li> -->
+      <!-- <li><a routerLink="">Online Aptitude Test</a></li> -->
+      <button mat-raised-button (click)="openDialogBox()">
+        Online Aptitude Test
+      </button>
       <li>
         <a routerLink="studentLogin">{{ loginInfo }}</a>
       </li>

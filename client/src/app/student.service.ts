@@ -15,7 +15,7 @@ export class StudentService {
     middleName: "",
     lastName: "",
     rollNo: 1,
-    grade: 3,
+    grade: 1,
     address: "",
     fathersName: "",
     mothersName: "",

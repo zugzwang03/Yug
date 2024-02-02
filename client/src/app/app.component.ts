@@ -1,22 +1,23 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { StudentService } from './student.service';
-import { studentRegistration } from './student';
 import { StudentRegistrationComponent } from './student-registration/student-registration.component';
 import { StudentLoginComponent } from './student-login/student-login.component';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { PopupComponent } from './popup/popup.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterModule, StudentRegistrationComponent, StudentLoginComponent],
+  imports: [CommonModule, RouterModule, StudentRegistrationComponent, StudentLoginComponent, MatDialogModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent implements OnInit {
   title = 'Yug';
   @Input() loginInfo = 'Login';
-  constructor(private studentService: StudentService) { }
+  constructor(private studentService: StudentService, private dialog: MatDialog, private router: Router) { }
   ngOnInit() {
     const toggleBtn = document.querySelector(".menu-toggle");
     const toggleicon = document.querySelector(".menu-toggle>i");
@@ -38,6 +39,17 @@ export class AppComponent implements OnInit {
     this.loginInfo = this.studentService.studentDetail.firstName + " " + this.studentService.studentDetail.lastName;
   }
 
-
+  openDialogBox() {
+    let dialogRef = this.dialog.open(PopupComponent);
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(result);
+      if(result === "Start now") {
+        this.router.navigateByUrl(`test-${this.studentService.studentDetail.grade}`);
+      }
+      else {
+        this.router.navigateByUrl('landing-page');
+      }
+    })
+  }
 }
 

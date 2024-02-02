@@ -1,0 +1,26 @@
+<h1>Answer the questions given below:</h1>
+
+<ol>
+  <li>
+    <span *ngFor="let questions of questionSet; let i = index">
+      <label id="example-radio-group-label">{{questions.question}} <br /></label>
+      <mat-radio-group
+        aria-labelledby="example-radio-group-label"
+        class="example-radio-group"
+      >
+        <mat-radio-button
+          class="example-radio-button"
+          *ngFor="let option of questions.options"
+          [value]="option"
+          name="questions.userAnswer" ngDefaultControl
+          [(ngModel)]="questions.userAnswer"
+          (change)="onRadioChange($event, i)"
+        >
+          {{ option.value }}
+        </mat-radio-button>
+      </mat-radio-group>
+    </span>
+  </li>
+</ol>
+
+<button (click)="checkAnswers()">Submit</button>
