@@ -17,8 +17,20 @@ import { Route, Router } from '@angular/router';
 })
 export class TestComponent {
   questionSet: questionSet[] = [];
+  timer: number = 60;
   constructor(private http: HttpClient, private studentService: StudentService, private router: Router) {
     this.getQuestions();
+    var refToThis = this;
+    setInterval(() => {
+      if (this.timer > 0) {
+        this.timer--;
+      } else {
+        this.timer = 60;
+      }
+    }, 1000)
+    setTimeout(function () {
+      refToThis.checkAnswers();
+    }, 60000);
   }
   getQuestions() {
     this.http.get(`assets/questionSet${this.studentService.studentDetail.grade}.json`).subscribe((res: any) => {
