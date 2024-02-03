@@ -12,7 +12,7 @@
         Online Aptitude Test
       </button>
       <li>
-        <a routerLink="studentLogin">{{ loginInfo }}</a>
+        <a [routerLink]="isLoggedIn === false ? 'studentLogin': 'studentInfo'">{{ loginInfo }}</a>
       </li>
     </ul>
   </nav>
