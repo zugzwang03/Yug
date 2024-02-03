@@ -3,10 +3,10 @@
     {
       "question": "Complete the rhyme by speaking Clap, Clap, Clap",
       "options": [
-        { "value": "Tap, Tap, Tap", "isAnswer": true },
-        { "value": "Pin Pun Pick", "isAnswer": false },
-        { "value": "Tram Trim Trum", "isAnswer": false },
-        { "value": "Feel Fall Fill", "isAnswer": false }
+        { "value": "Tap, Tap, Tap" },
+        { "value": "Pin Pun Pick" },
+        { "value": "Tram Trim Trum" },
+        { "value": "Feel Fall Fill" }
       ],
       "rightAnswer": "Tap, Tap, Tap",
       "userAnswer": ""
@@ -14,10 +14,10 @@
     {
       "question": "How do you greet your teacher when you go to school?",
       "options": [
-        { "value": "Good Morning", "isAnswer": true },
-        { "value": "Good Night", "isAnswer": false },
-        { "value": "Good Evening", "isAnswer": false },
-        { "value": "Greetings ", "isAnswer": false }
+        { "value": "Good Morning" },
+        { "value": "Good Night" },
+        { "value": "Good Evening" },
+        { "value": "Greetings " }
       ],
       "rightAnswer": "Good Morning",
       "userAnswer": ""
@@ -25,10 +25,10 @@
     {
       "question": "How do you ask to your teacher when you enter in the classroom?",
       "options": [
-        { "value": "May I come in, ma'am?", "isAnswer": true },
-        { "value": "I want to come in", "isAnswer": false },
-        { "value": "I want to get in", "isAnswer": false },
-        { "value": "Can I come in?", "isAnswer": false }
+        { "value": "May I come in, ma'am?" },
+        { "value": "I want to come in" },
+        { "value": "I want to get in" },
+        { "value": "Can I come in?" }
       ],
       "rightAnswer": "May I come in, ma'am?",
       "userAnswer": ""
@@ -36,24 +36,24 @@
     {
       "question": "How do you greet your parents when you go to sleep?",
       "options": [
-        { "value": "Good Night", "isAnswer": true },
-        { "value": "Good Evening", "isAnswer": false },
-        { "value": "Good Morning", "isAnswer": false },
-        { "value": "Good Noon", "isAnswer": false }
+        { "value": "Good Night" },
+        { "value": "Good Evening" },
+        { "value": "Good Morning" },
+        { "value": "Good Noon" }
       ],
       "rightAnswer": "Good Night",
       "userAnswer": ""
     },
     {
-        "question": "Complete the rhyme by speaking: Jump, jump, jump",
-        "options": [
-            {"value": "Run, run, run", "isAnswer": true},
-            {"value": "Pin, pun, pick", "isAnswer": false},
-            {"value": "Tram, trim, trum", "isAnswer": false},
-            {"value": "Pick, pluck, play", "isAnswer": false}
-        ],
-        "rightAnswer": "Run, run, run",
-        "userAnswer": ""
+      "question": "Complete the rhyme by speaking: Jump, jump, jump",
+      "options": [
+        { "value": "Run, run, run" },
+        { "value": "Pin, pun, pick" },
+        { "value": "Tram, trim, trum" },
+        { "value": "Pick, pluck, play" }
+      ],
+      "rightAnswer": "Run, run, run",
+      "userAnswer": ""
     }
   ]
 }
