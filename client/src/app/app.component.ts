@@ -40,11 +40,16 @@ export class AppComponent implements OnInit {
   }
 
   openDialogBox() {
+    if(this.loginInfo == "Login") {
+      alert("You have to login at first to access this feature!");
+      this.router.navigateByUrl('studentLogin');
+      return;
+    }
     let dialogRef = this.dialog.open(PopupComponent);
     dialogRef.afterClosed().subscribe(result => {
       console.log(result);
       if(result === "Start now") {
-        this.router.navigateByUrl(`test-${this.studentService.studentDetail.grade}`);
+        this.router.navigateByUrl('test');
       }
       else {
         this.router.navigateByUrl('landing-page');
