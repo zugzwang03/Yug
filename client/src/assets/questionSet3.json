@@ -1,0 +1,61 @@
+{
+  "questionSet": [
+    {
+      "question": "Sahil shone a torch and blew a horn at the same time, while standing at 15m distance from Amit. Amit will _______.",
+      "options": [
+        { "value": "First hear the sound then see the light" },
+        { "value": "First see the light then hear the sound" },
+        { "value": "See the light and hear the sound at the same time" },
+        { "value": "None of these" }
+      ],
+      "userAnswer": "",
+      "rightAnswer": "First see the light then hear the sound"
+    },
+    {
+      "question": "X is a force that works in the opposite direction of movement of an object in contact with a surface. It is _______.",
+      "options": [
+        { "value": "Gravity" },
+        { "value": "Push" },
+        { "value": "Pull" },
+        { "value": "Friction" }
+      ],
+      "userAnswer": "",
+      "rightAnswer": "Friction"
+    },
+    {
+      "question": "Select the odd one out on the basis of type of mechanical force involved.",
+      "options": [
+        { "value": "Opening the door of a refrigerator" },
+        { "value": "Playing tug of war" },
+        { "value": "Hitting the cricket ball with a bat to make run" },
+        {
+          "value": "Taking out water from a well using rope attached to a bucket"
+        }
+      ],
+      "userAnswer": "",
+      "rightAnswer": "Hitting the cricket ball with a bat to make run"
+    },
+    {
+      "question": "Q can hear the sound made by P in the shortest time, when the medium is a _______.",
+      "options": [
+        { "value": "Brick wall" },
+        { "value": "Water" },
+        { "value": "Air" },
+        { "value": "Vacuum" }
+      ],
+      "userAnswer": "",
+      "rightAnswer": "Brick wall"
+    },
+    {
+      "question": "Ritu cannot hear what Megha is saying, X must be ______.",
+      "options": [
+        { "value": "Solid" },
+        { "value": "Liquid" },
+        { "value": "Gas" },
+        { "value": "Vacuum" }
+      ],
+      "userAnswer": "",
+      "rightAnswer": "Vacuum"
+    }
+  ]
+}
