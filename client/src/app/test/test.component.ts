@@ -52,6 +52,7 @@ export class TestComponent {
       totalScore: totalScore,
       percentage: (scoreObtained / totalScore) * 100
     };
+    this.studentService.updateAptitudeScore(this.studentService.aptitudeScore, this.studentService.studentDetail.email).subscribe(res => console.log(res));
     this.router.navigateByUrl('score-card');
   }
   onRadioChange(event: MatRadioChange, index: number) {

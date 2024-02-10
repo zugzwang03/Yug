@@ -1,0 +1,59 @@
+{
+  "questionSet": [
+    {
+      "question": "Which Bollywood personality has been appointed as the brand ambassador of Switzerland tourism?",
+      "options": [
+        { "value": "Alia Bhatt" },
+        { "value": "Ranveer Singh" },
+        { "value": "Amitabh Bachchan" },
+        { "value": "None of these" }
+      ],
+      "userAnswer": "",
+      "rightAnswer": "Ranveer Singh"
+    },
+    {
+      "question": "The world's longest and deepest rail tunnel Gotthard Base Tunnel is 57 km long. In which country is it located?",
+      "options": [
+        { "value": "Italy" },
+        { "value": "Germany" },
+        { "value": "France" },
+        { "value": "Switzerland" }
+      ],
+      "userAnswer": "",
+      "rightAnswer": "Switzerland"
+    },
+    {
+      "question": "Which of the following countries has become the newest member of the Missile Technology Control Regime (MTCR)?",
+      "options": [
+        { "value": "Canada" },
+        { "value": "Poland" },
+        { "value": "Brazil" },
+        { "value": "India" }
+      ],
+      "userAnswer": "",
+      "rightAnswer": "India"
+    },
+    {
+      "question": "Which among the following is the first solar powered aircraft?",
+      "options": [
+        { "value": "Spirit of St Louis" },
+        { "value": "Mary Celeste" },
+        { "value": "Solar Impulse 2" },
+        { "value": "None of these" }
+      ],
+      "userAnswer": "",
+      "rightAnswer": "Solar Impulse 2"
+    },
+    {
+      "question": "Suryakiran - X, a joint military exercise was held in October - November 2016 in which country?",
+      "options": [
+        { "value": "India" },
+        { "value": "Nepal" },
+        { "value": "SriLanka" },
+        { "value": "Malaysia" }
+      ],
+      "userAnswer": "",
+      "rightAnswer": "Nepal"
+    }
+  ]
+}

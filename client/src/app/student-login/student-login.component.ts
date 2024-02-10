@@ -28,7 +28,8 @@ export class StudentLoginComponent {
       if(msg.success) {
         console.log('Student logged in');
         this.studentService.isLoggedIn = true;
-        this.studentService.studentDetail = msg.student;    
+        this.studentService.studentDetail = msg.student;  
+        this.studentService.aptitudeScore = msg.student.aptitudeScore;  
         this.loginInfo.emit(); 
         this.router.navigate(['landing-page']);
       }

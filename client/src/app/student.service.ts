@@ -49,4 +49,7 @@ export class StudentService {
       }
     );
   }
+  updateAptitudeScore(apti: aptitudeScore, email: string): Observable<string> {
+    return this.http.post<string>('http://localhost:3000/api/v1/student/apti', { apti, email });
+  }
 }

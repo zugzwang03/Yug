@@ -37,9 +37,8 @@ const login = catchAsyncErrors(async (req, res, next) => {
 });
 
 const getStudentInfo = catchAsyncErrors(async (req, res, next) => {
-    const {email} = req.body;
+    const { email } = req.body;
     const student = await Student.findOne({ email });
-    console.log(student);
     if (!student) {
         return res.json({
             success: false,
@@ -50,10 +49,27 @@ const getStudentInfo = catchAsyncErrors(async (req, res, next) => {
         success: true,
         student
     });
-})
+});
+
+const apti = catchAsyncErrors(async (req, res, next) => {
+    const { email, apti } = req.body;
+    var student = await Student.findOne({ email });
+    if (!student) {
+        return res.json({
+            success: false,
+            message: "Student not found"
+        });
+    }
+    student = await Student.findByIdAndUpdate(student._id, { aptitudeScore: apti });
+    res.status(200).json({
+        success: true,
+        student
+    });
+});
 
 module.exports = {
     register,
     login,
-    getStudentInfo
+    getStudentInfo,
+    apti
 };

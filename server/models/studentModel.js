@@ -53,6 +53,11 @@ const studentSchema = new mongoose.Schema({
     parentPhoneNumber: {
         type: Number,
         required: true
+    },
+    aptitudeScore: {
+        userScore: Number,
+        totalScore: Number,
+        percentage: Number
     }
 });
 
