@@ -1,4 +1,5 @@
 @import "../../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+
 * {
     padding: 0px;
     margin: 0px;
@@ -49,7 +50,19 @@ body {
     color: #fff;
 }
 
-.nav-list a:hover {
+
+.nav-list button {
+    /*new*/
+    color: #fff;
+    font-size: 1.3rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.nav-list a:hover,
+.nav-list button:hover {
+    /*, .nav-list button :hover*/
     color: rgb(71, 5, 137);
 }
 
@@ -84,17 +97,18 @@ body {
         box-shadow: 0 0 10px rgba(145, 10, 10, 0.1);
     }
 
-    .nav-list a {
+    .nav-list a,
+    .nav-list button {
         font-size: 1rem;
         font-weight: 100;
         color: rgb(85, 85, 85)
     }
-    .nav-list a:hover {
+
+    .nav-list a:hover,
+    .nav-list button :hover {
         color: black;
-        font-weight: 400;
+        font-weight: 500;
     }
 
 
 }
-
-
