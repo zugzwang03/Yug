@@ -1,0 +1,59 @@
+{
+  "questionSet": [
+    {
+      "question": "Complete the rhyme by speaking Clap, Clap, Clap",
+      "options": [
+        { "value": "Tap, Tap, Tap" },
+        { "value": "Pin Pun Pick" },
+        { "value": "Tram Trim Trum" },
+        { "value": "Feel Fall Fill" }
+      ],
+      "rightAnswer": "Tap, Tap, Tap",
+      "userAnswer": ""
+    },
+    {
+      "question": "How do you greet your teacher when you go to school?",
+      "options": [
+        { "value": "Good Morning" },
+        { "value": "Good Night" },
+        { "value": "Good Evening" },
+        { "value": "Greetings " }
+      ],
+      "rightAnswer": "Good Morning",
+      "userAnswer": ""
+    },
+    {
+      "question": "How do you ask to your teacher when you enter in the classroom?",
+      "options": [
+        { "value": "May I come in, ma'am?" },
+        { "value": "I want to come in" },
+        { "value": "I want to get in" },
+        { "value": "Can I come in?" }
+      ],
+      "rightAnswer": "May I come in, ma'am?",
+      "userAnswer": ""
+    },
+    {
+      "question": "How do you greet your parents when you go to sleep?",
+      "options": [
+        { "value": "Good Night" },
+        { "value": "Good Evening" },
+        { "value": "Good Morning" },
+        { "value": "Good Noon" }
+      ],
+      "rightAnswer": "Good Night",
+      "userAnswer": ""
+    },
+    {
+      "question": "Complete the rhyme by speaking: Jump, jump, jump",
+      "options": [
+        { "value": "Run, run, run" },
+        { "value": "Pin, pun, pick" },
+        { "value": "Tram, trim, trum" },
+        { "value": "Pick, pluck, play" }
+      ],
+      "rightAnswer": "Run, run, run",
+      "userAnswer": ""
+    }
+  ]
+}

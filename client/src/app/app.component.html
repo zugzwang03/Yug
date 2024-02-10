@@ -1,1 +1,21 @@
-<h1>Hello World</h1>
+<!-- <h1 id="nav">{{ title }} <a class="links" routerLink="studentLogin"> {{loginInfo}} </a></h1> -->
+
+<div class="navbardiv">
+  <nav class="navbar">
+    <div class="logo">{{ title }}</div>
+    <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+    <ul class="nav-list hide">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <!-- <li><a routerLink="">Online Aptitude Test</a></li> -->
+      <li><button mat-raised-button (click)="openDialogBox()">
+        Online Aptitude Test
+      </button></li>
+      <li>
+        <a [routerLink]="isLoggedIn === false ? 'studentLogin': 'studentInfo'">{{ loginInfo }}</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<router-outlet (activate)="onActivate()"></router-outlet>

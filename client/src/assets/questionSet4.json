@@ -1,0 +1,59 @@
+{
+  "questionSet": [
+    {
+      "question": "What is a software?",
+      "options": [
+        { "value": "A type of computer peripheral" },
+        { "value": "A computer board" },
+        { "value": "A set of instructions for your computer" },
+        { "value": "A cover for the computer" }
+      ],
+      "userAnswer": "",
+      "rightAnswer": "A set of instructions for your computer"
+    },
+    {
+      "question": "When your teacher asks a question in the class, you simply raise your hand if you know the answer. It is your brain that prompts you to raise the hand or you can say, it gives you instructions to react like this. Similarly, a computer gets all the instructions from the ____________ to perform various tasks.",
+      "options": [
+        { "value": "Faux ware" },
+        { "value": "Software" },
+        { "value": "Netware" },
+        { "value": "Appware" }
+      ],
+      "userAnswer": "",
+      "rightAnswer": "Software"
+    },
+    {
+      "question": "What do application programs do?",
+      "options": [
+        { "value": "Enable the RAM to load information." },
+        { "value": "Enable the user to perform a task." },
+        { "value": "Enable the BIOS instructions to load on hard disk." },
+        { "value": "Both [A] and [B]" }
+      ],
+      "userAnswer": "",
+      "rightAnswer": "Enable the user to perform a task."
+    },
+    {
+      "question": "Which of the following is a file management software in Windows 7?",
+      "options": [
+        { "value": "Calculator" },
+        { "value": "Internet Explorer" },
+        { "value": "Windows Explorer" },
+        { "value": "MS-Paint" }
+      ],
+      "userAnswer": "",
+      "rightAnswer": "Windows Explorer"
+    },
+    {
+      "question": "Which of the following software is used to play music on Windows?",
+      "options": [
+        { "value": "Windows Media Player" },
+        { "value": "Windows Sound Recorder" },
+        { "value": "Windows Sync Center" },
+        { "value": "Sticky Notes" }
+      ],
+      "userAnswer": "",
+      "rightAnswer": "Windows Media Player"
+    }
+  ]
+}

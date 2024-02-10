@@ -1,0 +1,16 @@
+<p>Student Basic Details are:</p>
+<p>
+  Name: {{ student.firstName }} {{ student.middleName }} {{ student.lastName }}
+</p>
+<p>Roll No: {{ student.rollNo }}</p>
+<p>Grade: {{ student.grade }}</p>
+<p>Address: {{ student.address }}</p>
+<p>Father's Name: {{ student.fathersName }}</p>
+<p>Mother's Name: {{ student.mothersName }}</p>
+<p>Phone Number: {{ student.phoneNumber }}</p>
+<p>Parent's Phone Number: {{ student.parentPhoneNumber }}</p>
+<p>
+  Aptitude Score: {{ aptitudeScore.userScore }} / {{ aptitudeScore.totalScore }}
+</p>
+<p>Aptitude Score in percentage: {{ aptitudeScore.percentage }} %</p>
+<button (click)="logOut()">LogOut</button>
