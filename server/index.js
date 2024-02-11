@@ -5,13 +5,14 @@ const fileUpload = require("express-fileupload");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const studentRoute = require("./routes/studentRoute");
+const tutorialsRoute = require("./routes/tutorialsRoute");
 
 dotenv.config();
 const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json({ limit: "50mb" }));
-app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
+app.use(bodyParser.urlencoded({ limit: "50mb", extended: false }));
 app.use(fileUpload());
 
 const connDb = () => {
@@ -32,6 +33,7 @@ connDb();
 PORT = process.env.PORT || 3000;
 
 app.use('/api/v1', studentRoute);
+app.use('/api/v1', tutorialsRoute);
 
 app.listen(PORT, () => {
   console.log(`Server running at port ${PORT}`);

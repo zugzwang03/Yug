@@ -5,6 +5,7 @@ import { StudentRegistrationComponent } from './student-registration/student-reg
 import { TestComponent } from './test/test.component';
 import { ScoreCardComponent } from './score-card/score-card.component';
 import { StudentInfoComponent } from './student-info/student-info.component';
+import { TutorialsComponent } from './tutorials/tutorials.component';
 
 export const routes: Routes = [
     { path: "studentLogin", component: StudentLoginComponent },
@@ -12,5 +13,6 @@ export const routes: Routes = [
     { path: "studentRegistration", component: StudentRegistrationComponent },
     { path: "test", component: TestComponent },
     { path: "score-card", component: ScoreCardComponent },
-    { path: "studentInfo", component: StudentInfoComponent }
+    { path: "studentInfo", component: StudentInfoComponent },
+    { path: "tutorials", component: TutorialsComponent }
 ];

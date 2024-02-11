@@ -8,7 +8,7 @@ import { aptitudeScore } from './question';
   providedIn: 'root',
 })
 export class StudentService {
-  isLoggedIn: boolean = false;
+  isLoggedIn: Boolean = false;
   studentDetail: studentRegistration = {
     email: "",
     password: "",
@@ -51,5 +51,8 @@ export class StudentService {
   }
   updateAptitudeScore(apti: aptitudeScore, email: string): Observable<string> {
     return this.http.post<string>('http://localhost:3000/api/v1/student/apti', { apti, email });
+  }
+  fileUpload(formData: FormData): Observable<string> {
+    return this.http.post<string>('http://localhost:3000/api/v1/tutorials/imageUpload', formData);
   }
 }
