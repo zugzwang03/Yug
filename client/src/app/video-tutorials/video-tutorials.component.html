@@ -1,0 +1,17 @@
+<h1>Predict the object in the videos below:</h1>
+<ul>
+  <li>
+    <span *ngFor="let video of videos; let i = index">
+      <iframe
+        width="560"
+        height="400"
+        [src]="safeUrl(video['urllink'])"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+      <p>Prediction: <input name="video.userAnswer" [(ngModel)]="video.userAnswer" /></p>
+      <button (click)="checkAnswer(i)">Check Answer</button>
+      <p [style]="{color: video['check'] == 'correct' ? 'green' : 'red'}">{{ video['check'] }}</p>
+    </span>
+  </li>
+</ul>
