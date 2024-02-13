@@ -11,6 +11,7 @@ import { Router, RouterModule } from '@angular/router';
   templateUrl: './student-login.component.html',
   styleUrl: './student-login.component.css'
 })
+
 export class StudentLoginComponent {
   @Input() email = "";
   @Input() password = "";
@@ -24,6 +25,7 @@ export class StudentLoginComponent {
     this.student.email = this.email;
     this.student.password = this.password;
     this.studentService.studentLogin(this.student).subscribe(res => {
+      console.log(res);
       var msg = JSON.parse(JSON.stringify(res));
       if(msg.success) {
         console.log('Student logged in');

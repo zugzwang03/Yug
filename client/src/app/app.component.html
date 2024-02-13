@@ -12,8 +12,8 @@
           Online Aptitude Test
         </button>
       </li>
-      <li><a routerLink="image-tutorials">Image Tutorials</a></li>
-      <li><a routerLink="video-tutorials">Video Tutorials</a></li>
+      <li><a [routerLink]="isLoggedIn === false ? 'studentLogin' : 'image-tutorials'">Image Tutorials</a></li>
+      <li><a [routerLink]="isLoggedIn === false ? 'studentLogin' : 'video-tutorials'">Video Tutorials</a></li>
       <li>
         <a
           [routerLink]="isLoggedIn === false ? 'studentLogin' : 'studentInfo'"
