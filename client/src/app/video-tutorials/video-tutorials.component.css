@@ -1,0 +1,55 @@
+h1 {
+  font-size: 1.8em; /* Increase heading size slightly */
+  margin-bottom: 1em; /* Add space below heading */
+}
+
+ul {
+  list-style: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+li {
+  margin-bottom: 2em; /* Add space between list items */
+  display: flex; /* Arrange elements horizontally */
+  flex-wrap: wrap; /* Allow wrapping to multiple lines if needed */
+  justify-content: space-between; /* Distribute elements horizontally */
+  align-items: flex-start; /* Align text vertically with iframe tops */
+}
+
+iframe {
+  /* width: 40%; Adjust width as needed */
+  height: 300px; /* Adjust height as needed */
+  margin-right: 1em; /* Add space between iframe and other elements */
+  border: 1px solid #ddd; /* Add thin border for better visibility */
+}
+
+p {
+  margin-bottom: 5px; /* Add space between text elements */
+}
+
+input {
+  width: 80%; /* Adjust input width as needed */
+  padding: 5px; /* Add padding for better user experience */
+  border: 1px solid #ccc; /* Add border for input field */
+  border-radius: 3px; /* Add rounded corners */
+}
+
+button {
+  background-color: #007bff; /* Blue button color */
+  color: #fff; /* White text color */
+  border: none; /* Remove button border */
+  padding: 10px 20px; /* Add padding to button */
+  border-radius: 5px; /* Add rounded corners to button */
+  cursor: pointer; /* Indicate clickable element */
+}
+
+p[style] {
+  font-weight: bold; /* Add boldness to check answer text */
+}
+
+/* Optional: Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  iframe {
+    width: 100%; /* Make iframe full width on smaller screens */
+  }
+}

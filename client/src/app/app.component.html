@@ -5,15 +5,44 @@
     <div class="logo">{{ title }}</div>
     <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
     <ul class="nav-list hide">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
+      <li><a [routerLink]="isLoggedIn === false ? 'studentLogin' : 'landing-page'">Home</a></li>
       <li>
         <button mat-raised-button (click)="openDialogBox()">
           Online Aptitude Test
         </button>
       </li>
-      <li><a [routerLink]="isLoggedIn === false ? 'studentLogin' : 'image-tutorials'">Image Tutorials</a></li>
-      <li><a [routerLink]="isLoggedIn === false ? 'studentLogin' : 'video-tutorials'">Video Tutorials</a></li>
+      <li>
+        <a
+          [routerLink]="
+            isLoggedIn === false ? 'studentLogin' : 'informational-videos'
+          "
+          >Informational Videos</a
+        >
+      </li>
+      <li>
+        <a
+          [routerLink]="
+            isLoggedIn === false ? 'studentLogin' : 'scholarship-portal'
+          "
+          >Scholarships</a
+        >
+      </li>
+      <li>
+        <a
+          [routerLink]="
+            isLoggedIn === false ? 'studentLogin' : 'image-tutorials'
+          "
+          >Image Tutorials</a
+        >
+      </li>
+      <li>
+        <a
+          [routerLink]="
+            isLoggedIn === false ? 'studentLogin' : 'video-tutorials'
+          "
+          >Video Tutorials</a
+        >
+      </li>
       <li>
         <a
           [routerLink]="isLoggedIn === false ? 'studentLogin' : 'studentInfo'"

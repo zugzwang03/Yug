@@ -7,6 +7,8 @@ import { ScoreCardComponent } from './score-card/score-card.component';
 import { StudentInfoComponent } from './student-info/student-info.component';
 import { TutorialsComponent } from './tutorials/tutorials.component';
 import { VideoTutorialsComponent } from './video-tutorials/video-tutorials.component';
+import { ScholarshipPortalComponent } from './scholarship-portal/scholarship-portal.component';
+import { InformationalVideosComponent } from './informational-videos/informational-videos.component';
 
 export const routes: Routes = [
     { path: "studentLogin", component: StudentLoginComponent },
@@ -16,5 +18,7 @@ export const routes: Routes = [
     { path: "score-card", component: ScoreCardComponent },
     { path: "studentInfo", component: StudentInfoComponent },
     { path: "image-tutorials", component: TutorialsComponent },
-    { path: "video-tutorials", component: VideoTutorialsComponent }
+    { path: "video-tutorials", component: VideoTutorialsComponent },
+    { path: "scholarship-portal", component: ScholarshipPortalComponent },
+    {path: "informational-videos", component: InformationalVideosComponent}
 ];

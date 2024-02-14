@@ -1,0 +1,12 @@
+<h1 style="text-align: center;">Scholarships Portal</h1>
+<div class="card-container">
+  <span *ngFor="let card of cards">
+    <div class="card">
+      <img [src]="safeUrl(card.image)" alt="Card 1 image" />
+      <h3>{{card.title}}</h3>
+      <p>{{card.description}}</p>
+      <br>
+      <button> <a target="_blank" [href]="safeUrl(card.link)"> Apply here </a> </button>
+    </div>
+  </span>
+</div>

@@ -1,0 +1,44 @@
+{
+  "informationalVideos": [
+    {
+      "title": "Minute Physics: What is Gravity?",
+      "description": "Ditch the \"pulling down\" image! Minute Physics reveals gravity's true nature: bending spacetime. Every object, big or small, warps the fabric of spacetime around it, creating an \"invisible hill\" attracting others.",
+      "videoLink": "https://www.youtube.com/embed/p_o4aY7xkXg?si=yYXcIWVNBntvWetf",
+      "channelName": "minutephysics",
+      "channelLink": "https://www.youtube.com/@MinutePhysics",
+      "views": "2.9M",
+      "likes": "20K",
+      "date": "2011-06-26"
+    },
+    {
+      "title": "Why is the Solar System Flat?",
+      "description": "The vast expanse of the cosmos may appear chaotic, filled with swirling galaxies and countless stars. Yet, within our own solar system, order reigns supreme, evidenced by the remarkable flatness of its planetary dance. This flattened disk, resembling a celestial ballet performed across billions of years.",
+      "videoLink": "https://www.youtube.com/embed/tmNXKqeUtJM?si=uDW1OZmU0so7c-y-",
+      "channelName": "minutephysics",
+      "channelLink": "https://www.youtube.com/@MinutePhysics",
+      "views": "8.9M",
+      "likes": "108K",
+      "date": "2014-01-10"
+    },
+    {
+      "title": "Evolution vs Natural Selection",
+      "description": "While often used interchangeably, 'evolution' and 'natural selection' are distinct concepts within the theory of biological evolution. Understanding the difference between them is crucial for grasping the mechanisms that drive the diversity of life on Earth.",
+      "videoLink": "https://www.youtube.com/embed/S1t5_iGN0xE?si=YvreJzPzLNc2bYY7",
+      "channelName": "minutephysics",
+      "channelLink": "https://www.youtube.com/@MinutePhysics",
+      "views": "2.03M",
+      "likes": "30K",
+      "date": "2014-01-22"
+    },
+    {
+      "title": "How Modern Light Bulbs Work",
+      "description": "The light bulb, a seemingly simple invention, has had a profound impact on humanity. More than just illuminating darkness, it has revolutionized our lives, shaping our work, leisure, and understanding of the world around us.",
+      "videoLink": "https://www.youtube.com/embed/oCEKMEeZXug?si=w0hW3bxJrYMlIq2j",
+      "channelName": "minutephysics",
+      "channelLink": "https://www.youtube.com/@MinutePhysics",
+      "views": "2.4M",
+      "likes": "54K",
+      "date": "2014-02-16"
+    }
+  ]
+}

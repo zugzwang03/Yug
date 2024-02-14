@@ -1,0 +1,35 @@
+<h1>Informational Videos</h1>
+
+<ul>
+  <div class="card-container">
+    <li>
+      <span *ngFor="let video of videos">
+        <div class="card">
+          <iframe
+            width="560"
+            height="315"
+            [src]="safeUrl(video.videoLink)"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <div class="card-info">
+            <h3>{{ video.title }}</h3>
+            <p>
+              {{ video.description }}
+            </p>
+            <p>
+              By
+              <a target="_blank" [href]="video.channelLink">{{
+                video.channelName
+              }}</a>
+              - Views: {{ video.views }}, Likes: {{ video.likes }}, Date:
+              {{ video.date }}
+            </p>
+          </div>
+        </div>
+      </span>
+    </li>
+  </div>
+</ul>

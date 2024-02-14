@@ -1,0 +1,72 @@
+.card {
+  background-color: #fff; /* Set card background color */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  padding: 20px; /* Add padding inside cards */
+  border-radius: 5px; /* Add rounded corners */
+  margin: 10px; /* Add space between cards */
+  flex: 0 0 25%; /* Make each card 25% of container width */
+}
+
+/* Style the card image */
+.card img {
+  width: 100%; /* Make image span the full card width */
+  height: auto; /* Maintain image aspect ratio */
+  margin-bottom: 10px; /* Add space below image */
+}
+
+/* Style the card title */
+.card h3 {
+  font-size: 1.2em; /* Increase title size slightly */
+  margin-bottom: 5px; /* Add space below title */
+}
+
+/* Style the card description */
+.card p {
+  font-size: 0.9em; /* Adjust description size */
+  line-height: 1.5; /* Increase line spacing for readability */
+}
+
+/* Style the apply button */
+.card button {
+  background-color: #007bff; /* Blue button color */
+  color: #fff; /* White text color */
+  border: none; /* Remove button border */
+  padding: 10px 20px; /* Add padding to button */
+  border-radius: 5px; /* Add rounded corners to button */
+  cursor: pointer; /* Indicate clickable element */
+  align-items: center;
+}
+
+/* Style the apply button link */
+.card button a {
+  color: inherit; /* Inherit text color from button */
+  text-decoration: none; /* Remove default link underline */
+}
+
+.card button {
+  /* Existing styles... */
+  display: flex; /* Enable flexbox for the button */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+/* Style the hover effect for apply button */
+.card button:hover {
+  background-color: #0062cc; /* Slightly darker blue on hover */
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* or grid-template-columns: 25% 25% 25% 25%; */
+  grid-gap: 20px; /* optional spacing */
+  margin: 0 auto; /* optional centering */
+  max-width: 1000px; /* or your desired max width */
+}
+
+h1 {
+  text-align: center;
+  padding: 2%;
+}

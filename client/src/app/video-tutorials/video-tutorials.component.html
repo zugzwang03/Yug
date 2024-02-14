@@ -12,6 +12,7 @@
       <p>Prediction: <input name="video.userAnswer" [(ngModel)]="video.userAnswer" /></p>
       <button (click)="checkAnswer(i)">Check Answer</button>
       <p [style]="{color: video['check'] == 'correct' ? 'green' : 'red'}">{{ video['check'] }}</p>
+      <br>
     </span>
   </li>
 </ul>
