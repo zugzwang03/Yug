@@ -1,0 +1,90 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 2em;
+  width: 250px; /* Adjust width as needed */
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 150px; /* Adjust height as needed */
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #777;
+}
+
+#title {
+  padding: 2%;
+}
+
+/* Accessibility */
+.card button {
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 25px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #0069d9;
+}
+
+.card button:focus {
+  outline: 3px solid #007bff;
+}
+
+.card-text {
+  color: #333;
+  contrast-ratio: 4.5; /* Ensure sufficient contrast */
+}
+
+/* Additional features */
+.social-media {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media a {
+  margin-right: 10px;
+}
+
+.social-media i {
+  font-size: 1.5em;
+  color: #ddd;
+}
+
+.social-media a:hover i {
+  color: #007bff;
+}
+
+.card button::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Style the rest of the elements as before... */
+
+ul {
+  list-style: none;
+}

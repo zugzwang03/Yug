@@ -15,3 +15,10 @@ export interface videos {
     likes: string,
     date: string
 }
+
+export interface expert {
+    name: string,
+    description: string,
+    image: string,
+    link: string
+}
