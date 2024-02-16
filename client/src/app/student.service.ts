@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { studentLogin, studentRegistration } from './student';
+import { studentInfo, studentLogin, studentRegistration } from './student';
 import { aptitudeScore } from './question';
 
 @Injectable({
@@ -48,6 +48,10 @@ export class StudentService {
         email: this.studentDetail.email,
       }
     );
+  }
+
+  editInfo(student: studentInfo): Observable<string> {
+    return this.http.post<string> ('http://localhost:3000/api/v1/student/editInfo', student);
   }
   updateAptitudeScore(apti: aptitudeScore, email: string): Observable<string> {
     return this.http.post<string>('http://localhost:3000/api/v1/student/apti', { apti, email });

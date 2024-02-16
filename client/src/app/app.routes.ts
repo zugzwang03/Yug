@@ -10,6 +10,7 @@ import { VideoTutorialsComponent } from './video-tutorials/video-tutorials.compo
 import { ScholarshipPortalComponent } from './scholarship-portal/scholarship-portal.component';
 import { InformationalVideosComponent } from './informational-videos/informational-videos.component';
 import { ExpertGuidanceComponent } from './expert-guidance/expert-guidance.component';
+import { EditDetailsComponent } from './edit-details/edit-details.component';
 
 export const routes: Routes = [
     { path: "studentLogin", component: StudentLoginComponent },
@@ -22,7 +23,6 @@ export const routes: Routes = [
     { path: "video-tutorials", component: VideoTutorialsComponent },
     { path: "scholarship-portal", component: ScholarshipPortalComponent },
     { path: "informational-videos", component: InformationalVideosComponent },
-    {
-        path: "expert-guidance", component: ExpertGuidanceComponent
-    }
+    { path: "expert-guidance", component: ExpertGuidanceComponent },
+    { path: "studentEdit", component: EditDetailsComponent }
 ];

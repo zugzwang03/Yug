@@ -62,4 +62,8 @@ export class StudentInfoComponent {
     this.router.navigateByUrl('studentLogin');
   }
 
+  editDetails() {
+    this.router.navigateByUrl('studentEdit');
+  }
+
 }
