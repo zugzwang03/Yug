@@ -51,6 +51,22 @@ const getStudentInfo = catchAsyncErrors(async (req, res, next) => {
     });
 });
 
+const editStudentInfo = catchAsyncErrors(async (req, res, next) => {
+    const { email } = req.body;
+    var student = await Student.findOne({ email });
+    if (!student) {
+        return res.json({
+            success: false,
+            message: "Student not found"
+        });
+    }
+    student = await Student.findByIdAndUpdate(student._id, req.body);
+    res.status(200).json({
+        success: true,
+        student
+    });
+})
+
 const apti = catchAsyncErrors(async (req, res, next) => {
     const { email, apti } = req.body;
     var student = await Student.findOne({ email });
@@ -71,5 +87,6 @@ module.exports = {
     register,
     login,
     getStudentInfo,
+    editStudentInfo,
     apti
 };

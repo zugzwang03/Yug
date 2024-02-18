@@ -18,3 +18,16 @@ export interface studentLogin {
     password: string
 };
 
+export interface studentInfo {
+    firstName: string,
+    middleName: string,
+    lastName: string,
+    rollNo: number,
+    grade: number,
+    address: string,
+    fathersName: string,
+    mothersName: string,
+    phoneNumber: number,
+    parentPhoneNumber: number
+}
+
