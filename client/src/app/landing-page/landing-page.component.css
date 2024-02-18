@@ -3,7 +3,7 @@
     padding: 0px;
 }
 .container {
-    /* background-color: rgb(150, 250, 250); */
+    background-color: rgb(150, 250, 250);
     height: calc(100vh - 80px);
     display: flex;
     flex-flow: row nowrap;
