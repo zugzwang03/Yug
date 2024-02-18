@@ -1,0 +1,121 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    background-color: rgb(150, 250, 250);
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.text-container {
+    height: 100%;
+    width: 40%;
+    box-sizing: border-box;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    padding-left: 5rem;
+}
+
+.container .image-container {
+    height: 100%;
+    width: 60%;
+    box-sizing: border-box;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+.text-container h1 {
+    font-size: 3rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.text-container p {
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+}
+
+.text-container button {
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 150px;
+    border: 1px solid rgb(209, 80, 238);
+    border-radius: 10px;
+    background-color: rgb(221, 145, 239);
+}
+
+@media(min-width:1250px) {
+
+    .container .image-container {
+        padding: 1.5rem;
+        width :55%;
+    }
+    .container .text-container {
+        padding: 1.5rem;
+        padding-left: 3rem;
+        width: 45%;
+    }
+
+}
+@media (max-width:1249px){
+    .container .image-container{
+        width: 45%;
+        padding: 0px;
+    }
+    .container .text-container{
+        box-sizing: border-box;
+        width: 55%;
+        padding: 20px 15px 20px 55px;
+    }
+}
+
+@media (max-width:1010px) {
+    .container{
+        display: flex;
+        flex-flow: column-reverse;
+        
+    }
+    
+    .container .image-container{
+        box-sizing: border-box;
+        width: 65%;
+        z-index: -1;
+        padding: 0px;
+    }
+    .image-container{
+        box-sizing: border-box;
+        padding-top: 2rem;
+        
+    }
+    .container .text-container{
+        width: 100%;
+        height: calc(50vh - 40px);
+        padding-top: 0px;
+    }
+    .text-container h1 {
+        font-size: 2rem;
+    }
+    .text-container p {
+        font-size: 1.1rem;
+    }
+}
