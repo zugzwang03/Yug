@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { StudentService } from '../student.service';
 import { aptitudeScore } from '../question';
 import { Router, RouterModule } from '@angular/router';
@@ -16,9 +16,12 @@ export class ScoreCardComponent implements OnInit {
     totalScore: 0,
     percentage: 0
   }
-  constructor(private studentService: StudentService, private router: Router) { }
+  constructor(private studentService: StudentService, private router: Router, private renderer: Renderer2) { }
   ngOnInit(): void {
     this.aptitudeScore = this.studentService.aptitudeScore;
+    var pie = document.querySelector('.pie');
+    console.log(pie);
+    this.renderer.setStyle(pie, 'background-image', `conic-gradient( rgb(6, 151, 6) ${this.aptitudeScore.percentage }%, rgb(227, 23, 23) ${(this.aptitudeScore.percentage) }%)`);
   }
   backHome() {
     this.router.navigateByUrl('landing-page')

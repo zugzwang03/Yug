@@ -1,0 +1,47 @@
+#body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+h2,
+h4 {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+strong#score {
+  font-size: 2rem;
+  color: #222;
+}
+
+span#percentage {
+  font-size: 1.5rem;
+  color: #222;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1481ce;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1481ce;
+}
+
+.pie {
+  width: 400px;
+  height: 400px;
+
+  /* background-image: conic-gradient(rgb(227, 23, 23) 64%, rgb(6, 151, 6) 64%); */
+  border-radius: 50%;
+}
