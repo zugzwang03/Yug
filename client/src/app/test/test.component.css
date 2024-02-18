@@ -1,9 +1,126 @@
 .example-radio-group {
-    display: flex;
-    flex-direction: column;
-    margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.example-radio-button {
+  margin: 5px;
+}
+
+.green-text {
+  color: green;
+}
+
+.red-text {
+  color: red;
+}
+
+#body {
+  font-family: sans-serif; /* Choose a modern font, e.g., Open Sans */
+  background-color: #f2f2f2; /* Light background */
+  padding: 4%;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+#example-radio-group-label {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 1.0em;
+}
+
+.example-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.example-radio-button {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #333;
+  padding-top: 1em;
+  padding-left: 1.2rem;
+}
+
+.example-radio-button:hover {
+  opacity: 0.8;
+}
+
+button {
+  background-color: #1d86c8; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 20px auto;
+  /* Optional subtle shadow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: rgb(13, 96, 126); ; /* Darker green on hover */
+}
+
+/* Consider responsiveness using media queries */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
   }
-  
-  .example-radio-button {
-    margin: 5px;
+  li {
+    font-size: 0.9rem;
   }
+  button {
+    font-size: 0.8rem;
+  }
+}
+
+
+#title {
+  background: linear-gradient(to right, rgb(24, 209, 209), rgb(41, 139, 199));
+  font-size: 3em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.5) inset;
+  border-bottom: 2px solid linear-gradient(to right, rgb(19, 225, 225), rgb(10, 106, 106));
+}
+
+#title:hover {
+  animation: text-glow 0.5s ease-in-out forwards;
+}
+
+@keyframes text-glow {
+  0% {
+    text-shadow: 0 0 0 rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+}

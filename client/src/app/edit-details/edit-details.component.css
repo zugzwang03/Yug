@@ -1,0 +1,80 @@
+body {
+  font-family: sans-serif;
+  /* Set background color or image here */
+}
+
+.reg-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+label {
+  width: 120px; /* Adjust width as needed */
+  text-align: right;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#save {
+    padding-left: 45%;
+}
+
+button {
+  background-color: #11acc1; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 60px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #1268c9; /* Darker green on hover */
+}
+
+/* Optional: Add subtle shadows and animations */
+.reg-group:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+#title {
+  text-align: center;
+  padding: 2%;
+  font-size: 4.2em;
+  background: linear-gradient(to right, rgb(19, 225, 225), rgb(10, 106, 106));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.5) inset;
+  border-bottom: 2px solid
+    linear-gradient(to right, rgb(19, 225, 225), rgb(10, 106, 106));
+}
+
+#title:hover {
+  animation: text-glow 0.5s ease-in-out forwards;
+}
+
+@keyframes text-glow {
+  0% {
+    text-shadow: 0 0 0 rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+}

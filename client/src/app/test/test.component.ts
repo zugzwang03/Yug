@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatRadioModule } from "@angular/material/radio";
 import { CommonModule } from '@angular/common';
@@ -15,7 +15,7 @@ import { Route, Router } from '@angular/router';
   templateUrl: './test.component.html',
   styleUrl: './test.component.css'
 })
-export class TestComponent {
+export class TestComponent implements OnInit {
   questionSet: questionSet[] = [];
   timer: number = 60;
   constructor(private http: HttpClient, private studentService: StudentService, private router: Router) {
@@ -27,10 +27,20 @@ export class TestComponent {
       } else {
         this.timer = 60;
       }
+      this.ngOnInit();
     }, 1000)
     setTimeout(function () {
       refToThis.checkAnswers();
     }, 60000);
+  }
+  ngOnInit() {
+    const timerElement = document.querySelector('.timer');
+    if (this.timer <= 10) {
+      timerElement?.classList.add("red-text");
+    }
+    else {
+      timerElement?.classList.add("green-text");
+    }
   }
   getQuestions() {
     this.http.get(`assets/questionSet${this.studentService.studentDetail.grade}.json`).subscribe((res: any) => {

@@ -1,4 +1,4 @@
-<p>Student Basic Details are:</p>
+<p id="title">Student Basic Details are:</p>
 <div class="reg-group">
   <label for="firstName">First Name:</label>
   <input
@@ -108,5 +108,6 @@
     required
   />
 </div>
-
-<button (click)="saveDetails()">Save Details</button>
+<div id="save">
+  <button style="margin: 0 auto" (click)="saveDetails()">Save Details</button>
+</div>
