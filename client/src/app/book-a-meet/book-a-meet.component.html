@@ -1,0 +1,79 @@
+<style>
+  #body-part {
+    font-family: sans-serif;
+    margin: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+  }
+  .button {
+    background-color: #4caf50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+</style>
+<div id="body-part">
+  <h1 id="title">Book Your Consultation</h1>
+  <form action="#">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Your Email Address:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="type">Select Consultation Type:</label>
+    <select id="type" name="type" required>
+      <option value="">Choose...</option>
+      <option value="career">Career Counselling</option>
+      <option value="education">Education Guidance</option>
+    </select>
+
+    <label for="preferred_method">Preferred Contact Method:</label>
+    <div>
+      <input
+        type="radio"
+        id="call"
+        name="preferred_method"
+        value="call"
+        required
+      />
+      <label for="call">Phone Call</label><br />
+      <input
+        type="radio"
+        id="meet"
+        name="preferred_method"
+        value="meet"
+        required
+      />
+      <label for="meet">Video Meeting</label>
+    </div>
+
+    <label for="availability">Your Availability (optional):</label>
+    <textarea id="availability" name="availability" rows="3"></textarea>
+
+    <button type="submit" >Submit Request</button>
+  </form>
+<br>
+  <p>
+    Please note that a representative will contact you shortly to confirm your
+    appointment.
+  </p>
+</div>

@@ -11,6 +11,7 @@ import { ScholarshipPortalComponent } from './scholarship-portal/scholarship-por
 import { InformationalVideosComponent } from './informational-videos/informational-videos.component';
 import { ExpertGuidanceComponent } from './expert-guidance/expert-guidance.component';
 import { EditDetailsComponent } from './edit-details/edit-details.component';
+import { BookAMeetComponent } from './book-a-meet/book-a-meet.component';
 
 export const routes: Routes = [
     { path: "studentLogin", component: StudentLoginComponent },
@@ -24,5 +25,6 @@ export const routes: Routes = [
     { path: "scholarship-portal", component: ScholarshipPortalComponent },
     { path: "informational-videos", component: InformationalVideosComponent },
     { path: "expert-guidance", component: ExpertGuidanceComponent },
-    { path: "studentEdit", component: EditDetailsComponent }
+    { path: "studentEdit", component: EditDetailsComponent },
+    { path: "bookAMeet", component: BookAMeetComponent }
 ];

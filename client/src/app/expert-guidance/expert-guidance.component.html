@@ -1,4 +1,4 @@
-<h1 id="title">Book a call with our experts on career counselling and guidance: </h1>
+<h1 id="title">Book a call with our experts on career counselling and guidance </h1>
 <ul>
   <div class="card-container">
     <span *ngFor="let expert of experts">
@@ -8,7 +8,7 @@
         <h3 class="card-title">{{expert.name}}</h3>
         <p class="card-text">{{expert.description}}</p>
         <br>
-        <button> Schedule a meet </button>
+        <button (click)="bookAMeet()"> Schedule a meet </button>
       </div>
     </li>
     </span>
