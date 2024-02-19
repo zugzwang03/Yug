@@ -21,7 +21,7 @@ export class ScoreCardComponent implements OnInit {
     this.aptitudeScore = this.studentService.aptitudeScore;
     var pie = document.querySelector('.pie');
     console.log(pie);
-    this.renderer.setStyle(pie, 'background-image', `conic-gradient( rgb(6, 151, 6) ${this.aptitudeScore.percentage }%, rgb(227, 23, 23) ${(this.aptitudeScore.percentage) }%)`);
+    this.renderer.setStyle(pie, 'background-image', `conic-gradient(rgba(18, 167, 68, 0.304)  ${this.aptitudeScore.percentage }%, rgba(221, 11, 11, 0.336) ${(this.aptitudeScore.percentage) }%)`);
   }
   backHome() {
     this.router.navigateByUrl('landing-page')

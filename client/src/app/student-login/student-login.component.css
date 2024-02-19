@@ -63,7 +63,7 @@
 }
 
 .form-group button {
-  background-color: #4caf50;
+  background-color: #1481ce;
   color: #fff;
   padding: 10px;
   box-sizing: border-box;
@@ -85,6 +85,6 @@
   font-size: 0.8rem;
   flex-basis: 50%;
   text-align: center;
-  color: #4caf50;
+  color: #1481ce;
   text-decoration: none;
 }

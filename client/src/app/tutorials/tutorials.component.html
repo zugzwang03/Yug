@@ -1,24 +1,29 @@
-<h2>Upload your image below:</h2>
-<br />
-<input
-  type="file"
-  (change)="onFileChange($event)"
-  [accept]="allowedFileTypes"
-/>
-<br />
-<br />
-<h2>Describe the image in a few sentences:</h2>
-<br />
-<textarea rows="5" cols="100"></textarea>
-<br />
-<br />
-<button (click)="checkAnswer()">Check answer</button>
-<br />
-<br />
-<h2 *ngIf="previewUrl">Preview:</h2>
-<br />
-<img *ngIf="previewUrl" [src]="previewUrl" alt="Preview" />
-<br />
-<br />
-<h2 *ngIf="correctAnswer != ''">The image is about:</h2>
-<p>{{ correctAnswer }}</p>
+<div id="body">
+  <h1 id="title">Image Tutorials</h1>
+
+  <h2>Upload your image below:</h2>
+  <br />
+  <input
+    class="file-input"
+    type="file"
+    (change)="onFileChange($event)"
+    [accept]="allowedFileTypes"
+  />
+  <br />
+  <br />
+  <h2>Describe the image in a few sentences:</h2>
+  <br />
+  <textarea class="description" rows="5" cols="90"></textarea>
+  <br />
+  <br />
+  <button class="check-button" (click)="checkAnswer()">Check answer</button>
+  <br />
+  <br />
+  <h2 *ngIf="previewUrl">Preview:</h2>
+  <br />
+  <img class="preview-img" *ngIf="previewUrl" [src]="previewUrl" alt="Preview" />
+  <br />
+  <br />
+  <h2 *ngIf="correctAnswer != ''">The image is about:</h2>
+  <p class="answer">{{ correctAnswer }}</p>
+</div>

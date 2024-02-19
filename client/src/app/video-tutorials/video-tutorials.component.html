@@ -1,18 +1,27 @@
-<h1>Predict the object in the videos below:</h1>
-<ul>
-  <li>
-    <span *ngFor="let video of videos; let i = index">
-      <iframe
-        width="560"
-        height="400"
-        [src]="safeUrl(video['urllink'])"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
-      <p>Prediction: <input name="video.userAnswer" [(ngModel)]="video.userAnswer" /></p>
-      <button (click)="checkAnswer(i)">Check Answer</button>
-      <p [style]="{color: video['check'] == 'correct' ? 'green' : 'red'}">{{ video['check'] }}</p>
-      <br>
-    </span>
-  </li>
-</ul>
+<div id="body">
+  <h1 id="title">Video Tutorials</h1>
+  <h1>Predict the object in the videos below:</h1>
+  <ul class="video-list">
+    <li class="video-item">
+      <span *ngFor="let video of videos; let i = index">
+        <iframe
+          class="video-iframe"
+          width="560"
+          height="400"
+          [src]="safeUrl(video['urllink'])"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+        <p class="video-prediction">
+          Prediction:
+          <input class="video-answer" name="video.userAnswer" [(ngModel)]="video.userAnswer" />
+        </p>
+        <button class="check-button" (click)="checkAnswer(i)">Check Answer</button>
+        <p [style]="{ color: video['check'] == 'correct' ? 'green' : 'red' }">
+          {{ video["check"] }}
+        </p>
+        <br />
+      </span>
+    </li>
+  </ul>
+</div>
