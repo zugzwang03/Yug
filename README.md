@@ -18,6 +18,8 @@ Education, the cornerstone of individual and societal advancement, holds the pow
 
 At its core, quality education should nurture the holistic development of every child. It goes beyond rote memorization and standardized tests, encompassing the cultivation of critical thinking, creativity, problem-solving skills, and emotional intelligence. Students should emerge equipped with the ability to learn independently, adapt to change, and contribute meaningfully to the world.
 
+![alt text](image-3.png)
+
 Accessibility and equity are fundamental pillars of quality education. Every child, regardless of background, socioeconomic status, or learning differences, deserves access to quality learning opportunities. This necessitates dismantling systemic barriers, providing adequate resources, and ensuring inclusive learning environments.
 
 Empowered and qualified teachers are the lifeblood of any quality education system. They should be equipped with the knowledge, skills, and support to foster a love of learning in their students. High-quality teacher education, ongoing professional development, and competitive salaries are crucial to attract and retain dedicated educators.
