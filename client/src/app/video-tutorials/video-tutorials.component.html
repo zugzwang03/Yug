@@ -1,6 +1,6 @@
 <div id="body">
   <h1 id="title">Video Tutorials</h1>
-  <h1>Predict the object in the videos below:</h1>
+  <h1>Predict the object in the videos below</h1>
   <ul class="video-list">
     <li class="video-item">
       <span *ngFor="let video of videos; let i = index">
@@ -20,6 +20,7 @@
         <p [style]="{ color: video['check'] == 'correct' ? 'green' : 'red' }">
           {{ video["check"] }}
         </p>
+        <p id="correct-answer" *ngIf="video.check"> Correct answer is: {{videos[i]['rightAnswer']}}</p>
         <br />
       </span>
     </li>
