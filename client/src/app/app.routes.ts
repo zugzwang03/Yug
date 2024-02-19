@@ -26,5 +26,6 @@ export const routes: Routes = [
     { path: "informational-videos", component: InformationalVideosComponent },
     { path: "expert-guidance", component: ExpertGuidanceComponent },
     { path: "studentEdit", component: EditDetailsComponent },
-    { path: "bookAMeet", component: BookAMeetComponent }
+    { path: "bookAMeet", component: BookAMeetComponent },
+    { path: "", component: LandingPageComponent }
 ];

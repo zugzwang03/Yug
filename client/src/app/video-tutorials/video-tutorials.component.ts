@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, Pipe } from '@angular/core';
+import { Component, Input, Pipe, Renderer2 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { StudentService } from '../student.service';
 import { HttpClient } from '@angular/common/http';

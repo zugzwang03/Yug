@@ -5,7 +5,7 @@
     <div class="logo">{{ title }}</div>
     <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
     <ul class="nav-list hide">
-      <li><a [routerLink]="isLoggedIn === false ? 'studentLogin' : 'landing-page'">Home</a></li>
+      <li><a routerLink="landing-page">Home</a></li>
       <li>
         <button mat-raised-button (click)="openDialogBox()">
           Online Aptitude Test

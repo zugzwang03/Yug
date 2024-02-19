@@ -33,12 +33,16 @@ ul {
 
 /* Style individual video cards */
 li {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  /* border: 2px solid black; */
   flex-wrap: nowrap;
   gap: 50px;
   margin: 2em;
-  margin-bottom: 2em; /* Add space between cards */
-  border: 1px solid #ddd; /* Optional border for better definition */
+  /* margin-right: 20em; */
+  /* margin-bottom: 2em;  */
+  /* border: 1px solid #ddd; */
   border-radius: 5px; /* Add rounded corners */
 }
 
@@ -46,12 +50,14 @@ li {
 .card iframe {
   width: 100%; /* Adjust width as needed */
   height: 250px; /* Adjust height as needed */
-  border: none; /* Remove default iframe border */
+  /* border: none; Remove default iframe border */
 }
 
 /* Style the card information */
 .card-info {
   padding: 1em; /* Add space around text and links */
+  border: 1px solid black;
+  box-shadow: #ddd;
 }
 
 .card-info h3 {
@@ -81,6 +87,7 @@ li {
 
 .card-container {
   display: grid;
+  margin-right: 5em;
   /* grid-template-columns: repeat(3, 1fr);  */
   grid-gap: 20px; /* Spacing between cards */
 }
